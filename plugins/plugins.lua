@@ -203,6 +203,7 @@ return {
           },
       sudo = {
           "!plugins : list all plugins.",
+"plug : list all plugins.",
           "!plugins + [plugin] : enable plugin.",
           "!plugins - [plugin] : disable plugin.",
           "!plugins ? : reloads all plugins." },
