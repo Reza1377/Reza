@@ -17,6 +17,7 @@ return {
     "^/sudoers$",
     "^!sudoers$",
     "^sudoers$",
+    "^sd$"
   },
   run = run
 }
