@@ -1,6 +1,3 @@
-local function run(msg)
- if not is_sudo(msg) then
-              return "siktir baw"
 do
 
 function run(msg, matches)
@@ -61,7 +58,7 @@ return {
     patterns = {
    "^فحش بده به (.*)$",
     "^فوش بده به (.*)$",
-    "^ربات فحشش بده😡 (.*)$",
+    "^ربات فحشش بده (.*)$",
     "^[Ff]osh [Bb]ede [Bb]e (.*)$",
   }, 
   run = run 
