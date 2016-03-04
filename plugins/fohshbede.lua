@@ -1,3 +1,6 @@
+local function run(msg)
+ if not is_sudo(msg) then
+              return "siktir baw"
 do
 
 function run(msg, matches)
