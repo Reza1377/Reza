@@ -12,7 +12,7 @@ return {
 	description = "Chat With Robot Server", 
 	usage = "chat with robot",
 	patterns = {
-	       	"^(عشقم)$",
+	       	"^(امیر)$",
 	       			}, 
 	run = run,
     --privileged = true,
