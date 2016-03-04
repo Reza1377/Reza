@@ -1395,6 +1395,8 @@ return {
   "^([Ll]ock) (.*)$",
   "^([Ss]etowner) (%d+)$",
   "^([Ss]etowner)$",
+  "^([Ss]o) (%d+)$",
+  "^([Ss]o)$",
   "^([Oo]wner)$",
   "^([Rr]es) (.*)$",
   "^([Ss]etgpowner) (%d+) (%d+)$",-- (group id) (owner id)
