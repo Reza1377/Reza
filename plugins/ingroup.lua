@@ -196,7 +196,7 @@ end
 --End Check Member
 local function show_group_settingsmod(msg, data, target)
  	if not is_momod(msg) then
-    	return "For moderators only!"
+    	return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   	end
   	local data = load_data(_config.moderation.data)
     if data[tostring(msg.to.id)] then
@@ -1393,8 +1393,6 @@ return {
   "^([Dd]emote)$",
   "^([Ss]et) ([^%s]+) (.*)$",
   "^([Ll]ock) (.*)$",
-  "^([Ss]etowner) (%d+)$",
-  "^([Ss]etowner)$",
   "^([Ss]o) (%d+)$",
   "^([Ss]o)$",
   "^([Oo]wner)$",
