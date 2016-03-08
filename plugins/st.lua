@@ -1,9 +1,9 @@
 local function run(msg)
  if not is_sudo(msg) then
-              return "siktir baw"
+              return "خفشو تو امیر نیستی جنده لاشی😡"
        end
 if msg.text == "امیر" then
-	return "با باباییم چیکار داری"
+	return "جوووووونمممممم باااااابااااااااییییییی😍😍"
 
 end
 end
