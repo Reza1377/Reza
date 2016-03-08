@@ -1,3 +1,4 @@
+
 local function run(msg, matches)
   local text = matches[1]
   local b = 1
@@ -13,9 +14,8 @@ return {
   description = "Reply Your Sent Message",
   usage = "بگو (message) : reply message",
   patterns = {
-    "^[!/]echo +(.+)$"
     "^بگو +(.+)$"
   }, 
-  run = run,
-  moderated = true
+	run = run,
+	moderated = true
 }
