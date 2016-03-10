@@ -33,9 +33,9 @@ do function run(msg, matches)
 end
   return {
   description = "Your Postation In Group",
-  usage = "مقام",
+  usage = "Wai",
   patterns = {
-  "^(مقام)$",
+  "^([Ww][Aa][Ii])$",
   "^(����)$"
     },
   run = run
