@@ -222,7 +222,7 @@ end
 
 local function set_descriptionmod(msg, data, target, about)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local data_cat = 'description'
   data[tostring(target)][data_cat] = about
@@ -240,7 +240,7 @@ local function get_description(msg, data)
 end
 local function lock_group_arabic(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'yes' then
@@ -254,7 +254,7 @@ end
 
 local function unlock_group_arabic(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'no' then
@@ -268,7 +268,7 @@ end
 
 local function lock_group_bots(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_bots_lock = data[tostring(target)]['settings']['lock_bots']
   if group_bots_lock == 'yes' then
@@ -282,7 +282,7 @@ end
 
 local function unlock_group_bots(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_bots_lock = data[tostring(target)]['settings']['lock_bots']
   if group_bots_lock == 'no' then
@@ -295,7 +295,7 @@ local function unlock_group_bots(msg, data, target)
 end
 local function lock_group_tag(msg, data, target)
 if not is_momod(msg) then
-return "For moderators only!"
+return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
 end
 local group_tag_lock = data[tostring(target)]['settings']['antitag']
 if group_tag_lock == 'yes' then
@@ -308,7 +308,7 @@ end
 end
 local function unlock_group_tag(msg, data, target)
 if not is_momod(msg) then
-return "For moderators only!"
+return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
 end
 local group_tag_lock = data[tostring(target)]['settings']['antitag']
 if group_tag_lock == 'no' then
@@ -347,7 +347,7 @@ end
 end
 local function lock_group_link(msg, data, target)
 if not is_momod(msg) then
-return "For moderators only!"
+return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
 end
 local group_link_lock = data[tostring(target)]['settings']['antilink']
 if group_link_lock == 'yes' then
@@ -360,7 +360,7 @@ end
 end
 local function unlock_group_link(msg, data, target)
 if not is_momod(msg) then
-return "For moderators only!"
+return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
 end
 local group_link_lock = data[tostring(target)]['settings']['antilink']
 if group_link_lock == 'no' then
@@ -373,7 +373,7 @@ end
 end
 local function lock_group_namemod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_name_set = data[tostring(target)]['settings']['set_name']
   local group_name_lock = data[tostring(target)]['settings']['lock_name']
@@ -388,7 +388,7 @@ local function lock_group_namemod(msg, data, target)
 end
 local function unlock_group_namemod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_name_set = data[tostring(target)]['settings']['set_name']
   local group_name_lock = data[tostring(target)]['settings']['lock_name']
@@ -402,7 +402,7 @@ local function unlock_group_namemod(msg, data, target)
 end
 local function lock_group_floodmod(msg, data, target)
   if not is_owner(msg) then
-    return "Only admins can do it for now"
+    return "فقط اونرها میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'yes' then
@@ -416,7 +416,7 @@ end
 
 local function unlock_group_floodmod(msg, data, target)
   if not is_owner(msg) then
-    return "Only admins can do it for now"
+return "فقط اونرها میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'no' then
@@ -430,7 +430,7 @@ end
 
 local function lock_group_membermod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_member_lock = data[tostring(target)]['settings']['lock_member']
   if group_member_lock == 'yes' then
@@ -444,7 +444,7 @@ end
 
 local function unlock_group_membermod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_member_lock = data[tostring(target)]['settings']['lock_member']
   if group_member_lock == 'no' then
@@ -459,7 +459,7 @@ end
 
 local function set_public_membermod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_member_lock = data[tostring(target)]['settings']['public']
   if group_member_lock == 'yes' then
@@ -473,7 +473,7 @@ end
 
 local function unset_public_membermod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_member_lock = data[tostring(target)]['settings']['public']
   if group_member_lock == 'no' then
@@ -515,7 +515,7 @@ end
 
 local function unlock_group_photomod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local group_photo_lock = data[tostring(target)]['settings']['lock_photo']
   if group_photo_lock == 'no' then
@@ -529,7 +529,7 @@ end
 
 local function set_rulesmod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط مدیران میتوانند به این بخش ها دسترسی داشته باشند😝😛😜😊😉!"
   end
   local data_cat = 'rules'
   data[tostring(target)][data_cat] = rules
@@ -539,7 +539,7 @@ end
 local function modadd(msg)
   -- superuser and admins only (because sudo are always has privilege)
   if not is_admin(msg) then
-    return "You're not admin"
+    return "شما سودو نیستی😉😊😝😜😛"
   end
   local data = load_data(_config.moderation.data)
   if is_group(msg) then
@@ -551,7 +551,7 @@ end
 local function realmadd(msg)
   -- superuser and admins only (because sudo are always has privilege)
   if not is_admin(msg) then
-    return "You're not admin"
+    return "شما سودو نیستی😉😊😝😜😛"
   end
   local data = load_data(_config.moderation.data)
   if is_realm(msg) then
@@ -672,12 +672,12 @@ local function demote_by_reply(extra, success, result)
     end  
 end
 
-local function setowner_by_reply(extra, success, result)
+local function so_by_reply(extra, success, result)
   local msg = result
   local receiver = get_receiver(msg)
   local data = load_data(_config.moderation.data)
   local name_log = msg.from.print_name:gsub("_", " ")
-  data[tostring(msg.to.id)]['set_owner'] = tostring(msg.from.id)
+  data[tostring(msg.to.id)]['s_o'] = tostring(msg.from.id)
       save_data(_config.moderation.data, data)
       savelog(msg.to.id, name_log.." ["..msg.from.id.."] setted ["..msg.from.id.."] as owner")
       local text = msg.from.print_name:gsub("_", " ").." is the owner now"
