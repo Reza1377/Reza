@@ -672,12 +672,12 @@ local function demote_by_reply(extra, success, result)
     end  
 end
 
-local function so_by_reply(extra, success, result)
+local function setowner_by_reply(extra, success, result)
   local msg = result
   local receiver = get_receiver(msg)
   local data = load_data(_config.moderation.data)
   local name_log = msg.from.print_name:gsub("_", " ")
-  data[tostring(msg.to.id)]['s_o'] = tostring(msg.from.id)
+  data[tostring(msg.to.id)]['set_owner'] = tostring(msg.from.id)
       save_data(_config.moderation.data, data)
       savelog(msg.to.id, name_log.." ["..msg.from.id.."] setted ["..msg.from.id.."] as owner")
       local text = msg.from.print_name:gsub("_", " ").." is the owner now"
@@ -1393,8 +1393,8 @@ return {
   "^([Dd]emote)$",
   "^([Ss]et) ([^%s]+) (.*)$",
   "^([Ll]ock) (.*)$",
-  "^([Ss]o) (%d+)$",
-  "^([Ss]o)$",
+  "^([Ss]etowner) (%d+)$",
+  "^([Ss]etowner)$",
   "^([Oo]wner)$",
   "^([Rr]es) (.*)$",
   "^([Ss]etgpowner) (%d+) (%d+)$",-- (group id) (owner id)
