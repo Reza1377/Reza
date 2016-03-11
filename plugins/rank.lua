@@ -1,4 +1,3 @@
-
 do
 local SUDO = 106164433 --put your id here(BOT OWNER ID)
 
@@ -106,7 +105,8 @@ local function action_by_reply(extra, success, result)-- (reply) /info  function
 		       text = text..'مقام : مدیر کل ربات (Executive Admin) \n\n'
 		     elseif is_admin2(result.from.id) then
 		       text = text..'مقام : ادمین ربات (Admin) \n\n'
-		     elseif is_owner2(result.from.id, result.to.id) then
+		     elseif is_owner2(result.from.id, result
+.to.id) then
 		       text = text..'مقام : مدیر کل گروه (Owner) \n\n'
 		     elseif is_momod2(result.from.id, result.to.id) then
 		       text = text..'مقام : مدیر گروه (Moderator) \n\n'
@@ -215,25 +215,21 @@ end
 return {
   description = 'Know your information or the info of a chat members.',
   usage = {
-	'info: Return your info and the chat info if you are in one.',
-	'(Reply)info: Return info of replied user if used by reply.',
-	'info <id>: Return the info\'s of the <id>.',
-	'info @<user_name>: Return the member @<user_name> information from the current chat.',
-	'setrank <userid> <rank>: change members rank.',
+	'!info: Return your info and the chat info if you are in one.',
+	'(Reply)!info: Return info of replied user if used by reply.',
+	'!info <id>: Return the info\'s of the <id>.',
+	'!info @<user_name>: Return the member @<user_name> information from the current chat.',
+	'!setrank <userid> <rank>: change members rank.',
 	'(Reply)!setrank <rank>: change members rank.',
   },
   patterns = {
-	"^[/!]([Ii][Nn][Ff][Oo])$",
-        "^[]([Ii][Nn][Ff][Oo])$",
-	"^[/!]([Ii][Nn][Ff][Oo]) (.*)$",
-        "^[]([Ii][Nn][Ff][Oo]) (.*)$",
-	"^[/!]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (%d+) (.*)$",
-        "^[]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (%d+) (.*)$",
-	"^[/!]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (.*)$",
-        "^[]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (.*)$",
+	"^[]([Ii][Nn][Ff][Oo])$",
+	
+"^[]([Ii][Nn][Ff][Oo]) (.*)$",
+	"^[]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (%d+) (.*)$",
+	"^[]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (.*)$",
   },
   run = run
 }
 
 end
-
