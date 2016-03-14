@@ -11,7 +11,7 @@ local function setrank(msg, name, value) -- setrank function
 	return send_msg('chat#id'..msg.to.id, 'مقام کاربر ('..name..') به '..value..' تغییر داده شد ', ok_cb,  true)
   end
 end
-local function res_user_callback(extra, success, result) -- /info <username> function
+local function res_user_callback(extra, success, result) -- info <username> function
   if success == 1 then  
   if result.username then
    Username = '@'..result.username
@@ -50,7 +50,7 @@ local function res_user_callback(extra, success, result) -- /info <username> fun
   end
 end
 
-local function action_by_id(extra, success, result)  -- /info <ID> function
+local function action_by_id(extra, success, result)  -- info <ID> function
  if success == 1 then
  if result.username then
    Username = '@'..result.username
@@ -82,14 +82,14 @@ local function action_by_id(extra, success, result)  -- /info <ID> function
   local um_hash = 'msgs:'..result.id..':'..extra.chat2
   user_info_msgs = tonumber(redis:get(um_hash) or 0)
   text = text..'تعداد پیام های فرستاده شده : '..user_info_msgs..'\n\n'
-  text = text..'@SBSS_Team'
+  text = text..'@Xx_kineh_team_Xx'
   send_msg(extra.receiver, text, ok_cb,  true)
   else
-  send_msg(extra.receiver, 'ایدی شخص مورد نظر در سیستم ثبت نشده است.\nاز دستور زیر استفاده کنید\n/info @username', ok_cb, false)
+  send_msg(extra.receiver, 'ایدی شخص مورد نظر در سیستم ثبت نشده است.\nاز دستور زیر استفاده کنید\ninfo @username', ok_cb, false)
   end
 end
 
-local function action_by_reply(extra, success, result)-- (reply) /info  function
+local function action_by_reply(extra, success, result)-- (reply) info  function
 		if result.from.username then
 		   Username = '@'..result.from.username
 		   else
@@ -136,7 +136,7 @@ local function run(msg, matches)
   local hash = 'usecommands:'..msg.from.id..':'..msg.to.id
   redis:incr(hash)
   if not is_sudo(msg) then
-    return "Only for Sudo"
+    return "هوی کسکش مگه تو سودویی کیری😡"
   end
   local receiver = get_receiver(msg)
   local Reply = msg.reply_id
@@ -195,7 +195,7 @@ local function run(msg, matches)
 	 text = text..'نام گروه : '..msg.to.title..'\n'
      text = text..'ایدی گروه : '..msg.to.id
     end
-	text = text..'\n\n@SBSS_Team'
+	text = text..'\n\n@Xx_kineh_team_Xx'
     return send_msg(receiver, text, ok_cb, true)
     end
   end
@@ -215,17 +215,17 @@ end
 return {
   description = 'Know your information or the info of a chat members.',
   usage = {
-	'!info: Return your info and the chat info if you are in one.',
-	'(Reply)!info: Return info of replied user if used by reply.',
-	'!info <id>: Return the info\'s of the <id>.',
-	'!info @<user_name>: Return the member @<user_name> information from the current chat.',
+	'info: Return your info and the chat info if you are in one.',
+	'(Reply)info: Return info of replied user if used by reply.',
+	'info <id>: Return the info\'s of the <id>.',
+	'info @<user_name>: Return the member @<user_name> information from the current chat.',
 	'!setrank <userid> <rank>: change members rank.',
 	'(Reply)!setrank <rank>: change members rank.',
   },
   patterns = {
-	"^[/!]([Ii][Nn][Ff][Oo])$",
+	"^[Ii][Nn][Ff][Oo]$",
 	
-"^[/!]([Ii][Nn][Ff][Oo]) (.*)$",
+"^[Ii][Nn][Ff][Oo] (.*)$",
 	"^[/!]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (%d+) (.*)$",
 	"^[/!]([Ss][Ee][Tt][Rr][Aa][Nn][Kk]) (.*)$",
   },
