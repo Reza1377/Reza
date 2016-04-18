@@ -217,6 +217,7 @@ function create_config( )
     "antitag",
     "gps",
     "auto_leave",
+    "Invite",
     "cpu",
     "calc",
     "bin",
@@ -302,7 +303,7 @@ Get a file of members in group/realm
 Get group type
 در مورد نقش گروه بگیرید
 
-!kill chat [GroupID]
+!clear member [GroupID]
 Kick all memebers and delete group ⛔️⛔️
 ⛔️تمامی اعضای گروه را حذف میکند ⛔️
 
