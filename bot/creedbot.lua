@@ -217,8 +217,7 @@ function create_config( )
     "antitag",
     "gps",
     "auto_leave",
-    "Invite",
-    "cpu",
+    "cpu"
     "calc",
     "bin",
     "tagall",
