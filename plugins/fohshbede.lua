@@ -17,7 +17,7 @@ elseif aw == 6 then
 elseif aw == 7 then
   return  ' جنازتو تحویل ننت میدم ' .. matches[1]
   elseif aw == 8 then
-  return  ' کیر سام و امیر تو کونت ' .. matches[1]
+  return  ' کیر رضا تو کس ننت ' .. matches[1]
   elseif aw == 9 then
   return  ' بد خواه نگاییدم با تو ام ' .. matches[1]
   elseif aw == 10 then
