@@ -237,6 +237,7 @@ function create_config( )
     "download_media",
     "invite",
     "all",
+    "pv",
     "leave_ban",
     "leave",
     "spam",
