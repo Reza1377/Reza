@@ -52,6 +52,8 @@ elseif aw == 19 then
   return  ' شورتت خونمون جا مونده بیا ببر ' .. matches[1]
   elseif aw == 25 then
   return  ' میتونی بخوریش ' .. matches[1]
+  elseif aw == 26 then
+  return  ' کس ننت با میمنت' .. matches[1]
 end
 end
 return {
