@@ -1,7 +1,7 @@
 local function run(msg)
     if not is_momod(msg) then
         chat_del_user('chat#id'..msg.to.id, 'user#id'..msg.from.id, ok_cb, true)
-        return 'بای شما از کلمات ممنوعه استفاده کردید'
+        return 'اسکول بی ادب سیک بزن بیرون'
     end
 end
 
@@ -30,6 +30,9 @@ return {patterns = {
   "خوارکسته",
   "خوارکسده",
   "کس ننت",
+  "کس",
+  "کونده",
+  "کص مادر",
   "#bk",
   "کیر",
   "کسننت باو"
