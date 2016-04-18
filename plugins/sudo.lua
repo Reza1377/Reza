@@ -2,7 +2,7 @@ do
 
 function run(msg, matches)
   return [[
-  👥Sudoers of Noosspeed : 
+  👥Sudoer of bot master : 
   🔭 @SUDO_USER 138342554 👥
   🔭 @xXx_kos_khahare_zendgi_xXx 153862670 👥 
   🔭 @xXx_kos_khahare_zendgi_xXx 92307266 👥
