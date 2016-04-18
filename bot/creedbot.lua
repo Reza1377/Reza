@@ -234,6 +234,7 @@ function create_config( )
     "set",
     "get",
     "broadcast",
+    "spame",
     "download_media",
     "invite",
     "all",
